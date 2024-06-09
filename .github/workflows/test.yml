@@ -1,4 +1,4 @@
-actions/checkout@v3name: Test saidaiKoyakusu
+name: Test saidaiKoyakusu
 
 on: [push, pull_request]
 
