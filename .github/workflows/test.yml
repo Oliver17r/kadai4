@@ -9,7 +9,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-
+       with:
+        node-version: '20'    
     - name: Set up permission for scripts
       run: chmod +x saidaiKoyakusu.sh test_saidaiKoyakusu.sh
 
