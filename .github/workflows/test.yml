@@ -1,4 +1,4 @@
-name: Test saidaiKoyakusu
+actions/checkout@v3name: Test saidaiKoyakusu
 
 on: [push, pull_request]
 
@@ -8,7 +8,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up permission for scripts
       run: chmod +x saidaiKoyakusu.sh test_saidaiKoyakusu.sh
