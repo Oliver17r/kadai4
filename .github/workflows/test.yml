@@ -1,0 +1,18 @@
+name: Test saidaiKoyakusu
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up permission for scripts
+      run: chmod +x saidaiKoyakusu.sh test_saidaiKoyakusu.sh
+
+    - name: Run tests
+      run: ./test_saidaiKoyakusu.sh
+
